@@ -4,7 +4,7 @@ import expression.exceptions.ArithmeticException;
 import expression.parser.ExpressionParser;
 import expression.parser.types.*;
 
-public class GenericTabulator implements expression.generic.Tabulator {
+public class GenericTabulator implements Tabulator {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2 || args[0].length() < 2 || args[0].charAt(0) != '-' || args[1].isEmpty()) {
